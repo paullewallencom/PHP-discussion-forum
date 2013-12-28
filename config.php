@@ -21,4 +21,6 @@
 
     $config_basedir = "http://127.0.0.1/_SandBox/PHP-discussion-forum/";
 
+    $error = 0;
+
 ?>
