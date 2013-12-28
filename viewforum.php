@@ -44,6 +44,10 @@ topic_id = " . $topicrow['topicid'];
         $msgnumrows = mysql_num_rows($msgresult);
         echo "<tr>";
         echo "<td>";
+        if($_SESSION['ADMIN']) {
+            echo "[<a href='delete.php?func=thread&id=" .
+                    $topicrow['topicid'] . "?forum=" . $validforum . "'>X</a>] - ";
+        }
         echo "<strong>
 <a href='viewmessages.php?id="
                 . $topicrow['topicid'] . "'>"
